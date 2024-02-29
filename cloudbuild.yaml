@@ -16,7 +16,7 @@ steps:
   args: ['clone', 'https://github.com/ahniverson/model-trainning-repo.git']
 
 - name: 'gcr.io/cloud-builders/gsutil'
-  args: ['cp', 'model-training-repo/bank_campaign_model_training.py', 'gs://us-central1-mlops-9244a903-bucket/dags']
+  args: ['cp', 'model-trainning-repo/bank_campaign_model_training.py', 'gs://us-central1-mlops-9244a903-bucket/dags']
 
 images:
 - 'us-central1-docker.pkg.dev/gcp-mlops-414802/python-apps/bank-campaign-model'
